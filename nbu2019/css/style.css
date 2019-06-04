@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "ArialMT";
+  src: url(../fonts/ArialMT.otf);
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "ArialBold";
+  src: url(../fonts/Arial-BoldMT.otf);
+  font-weight: 700;
+  font-style: normal; }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "ArialMT", sans-serif; }
+
+.logo {
+  margin: 10px auto 40px;
+  text-align: center;
+  color: #999; }
+  .logo-title {
+    font-size: 21px;
+    font-family: "ArialBold", sans-serif;
+    font-weight: 700; }
+    .logo-title__second {
+      font-size: 13px; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 10px;
+  background: #999;
+  width: 312px; }
+  .form-input {
+    margin-bottom: 10px;
+    padding: 5px 10px; }
+  .form-label {
+    text-align: left;
+    color: #eee;
+    font-size: 10px; }
+  .form-block {
+    margin: 0 auto 20px;
+    text-align: center; }
+  .form-title {
+    margin-bottom: -5px;
+    font-family: "ArialBold", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #001b79; }
+  .form-descr {
+    margin-bottom: 10px;
+    color: #999; }
+  .form-img {
+    position: relative; }
+    .form-img::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      border: 30px solid transparent;
+      border-left: 40px solid #001b79; }
+  .form-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    background: #001b79;
+    color: #fff;
+    width: 312px; }
+    .form-bottom__top {
+      font-size: 18px; }
+    .form-bottom__second {
+      font-size: 14px; }
+    .form-bottom__date {
+      font-size: 12px; }
+
+.form input::-webkit-input-placeholder {
+  color: #bbb;
+  font-size: 13px; }
+
+.form input:-moz-placeholder {
+  color: #bbb;
+  font-size: 13px; }
+
+.form-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px; }
+
+.form-checkbox + label {
+  margin-bottom: 0;
+  padding: 2px 0 0 25px;
+  position: relative;
+  cursor: pointer; }
+
+.form-checkbox + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff; }
+
+.form-checkbox:checked + label:before {
+  background: #001b79; }
+
+.title {
+  margin-bottom: 5px;
+  color: #001b79;
+  font-weight: 700;
+  line-height: 1; }
+
+.descr {
+  margin-bottom: 10px;
+  color: #999;
+  font-size: 15px;
+  text-align: center; }
+
+.section {
+  margin: 0 auto 20px;
+  text-align: center; }
+
+.diploma-license img {
+  width: 300px; }
+.diploma-license__top, .diploma-license__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px; }
+.diploma-license__span {
+  font-size: 10px;
+  color: #999; }
+.diploma-license__middle {
+  margin-bottom: 25px; }
+  .diploma-license__middle-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+.diploma-license__bottom {
+  margin-bottom: 50px; }
+  .diploma-license__bottom img {
+    margin-bottom: 5px; }
+
+.knowledge-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px; }
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 20px;
+  text-align: center;
+  width: 312px; }
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #999; }
+  .icon img {
+    width: 20px; }
+
+.footer {
+  padding: 10px 0;
+  background: #999;
+  text-align: center;
+  color: #fff; }
+  .footer-list {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px; }
+    .footer-list li {
+      margin: 5px 0; }
+    .footer-list li a {
+      color: #fff; }
+  .footer-descr {
+    font-size: 10px; }
+
+@media screen and (max-width: 767px) {
+  .knowledge-img {
+    justify-content: space-between; }
+    .knowledge-img img {
+      width: 150px; }
+
+  .diploma-license img {
+    width: 180px; } }
+@media screen and (max-width: 575px) {
+  .section {
+    width: 312px; }
+
+  .logo {
+    margin-bottom: 20px; }
+
+  .diploma-license img {
+    width: 250px; }
+  .diploma-license__middle-img {
+    flex-direction: column; }
+
+  .knowledge-img {
+    flex-direction: column; }
+    .knowledge-img img {
+      width: auto;
+      margin-bottom: 10px; } }

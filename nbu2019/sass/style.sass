@@ -1,0 +1,198 @@
+@import "fonts"
+@import "variables"
+
+*
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+body
+    font-family: 'ArialMT', sans-serif
+
+.logo
+    margin: 10px auto 40px
+    text-align: center
+    color: $text
+    &-title
+        font-size: 21px
+        font-family: 'ArialBold', sans-serif
+        font-weight: 700
+        &__second
+            font-size: 13px
+
+.form
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    padding: 10px
+    background: $text
+    width: 312px
+    &-input
+        margin-bottom: 10px
+        padding: 5px 10px
+    &-label
+        text-align: left
+        color: #eee
+        font-size: 10px
+
+    &-block
+        margin: 0 auto 20px
+        text-align: center
+    &-title
+        margin-bottom: -5px
+        font-family: 'ArialBold', sans-serif
+        font-weight: 700
+        font-size: 20px
+        color: $headers
+    &-descr
+        margin-bottom: 10px
+        color: $text
+    &-img
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            -webkit-transform: translateY(-50%)
+            -moz-transform: translateY(-50%)
+            -ms-transform: translateY(-50%)
+            -o-transform: translateY(-50%)
+            transform: translateY(-50%)
+            border: 30px solid transparent
+            border-left: 40px solid $headers
+
+    &-bottom
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: auto
+        padding: 10px
+        background: $headers
+        color: #fff
+        width: 312px
+        &__top
+            font-size: 18px
+        &__second
+            font-size: 14px
+        &__date
+            font-size: 12px
+
+.form input::-webkit-input-placeholder
+    color: #bbb
+    font-size: 13px
+
+.form input:-moz-placeholder
+    color: #bbb
+    font-size: 13px
+
+.form-checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
+    margin: 10px 0 0 20px
+
+.form-checkbox + label
+    margin-bottom: 0
+    padding: 2px 0 0 25px
+    position: relative
+    cursor: pointer
+
+.form-checkbox + label:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 1px
+    width: 15px
+    height: 15px
+    background-color: #ffffff
+
+.form-checkbox:checked + label:before
+    background: $headers
+
+.title
+    margin-bottom: 5px
+    color: $headers
+    font-weight: 700
+    line-height: 1
+
+.descr
+    margin-bottom: 10px
+    color: $text
+    font-size: 15px
+    text-align: center
+
+.section
+    margin: 0 auto 20px
+    text-align: center
+
+.diploma
+    &-license
+        img
+            width: 300px
+        &__top, &__bottom
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            margin-bottom: 25px
+        &__span
+            font-size: 10px
+            color: $text
+        &__middle
+            margin-bottom: 25px
+            &-img
+                display: flex
+                justify-content: space-around
+                align-items: center
+        &__bottom
+            margin-bottom: 50px
+            img
+                margin-bottom: 5px
+
+.knowledge
+    &-img
+        display: flex
+        align-items: center
+        justify-content: space-around
+        margin-bottom: 20px
+
+
+.icons
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0 auto 20px
+    text-align: center
+    width: 312px
+
+.icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 30px
+    height: 30px
+    background: $text
+    img
+        width: 20px
+
+.footer
+    padding: 10px 0
+    background: $text
+    text-align: center
+    color: #fff
+    &-list
+        margin-bottom: 0
+        padding: 0
+        list-style: none
+        font-size: 14px
+        li
+            margin: 5px 0
+        li a
+            color: #fff
+    &-descr
+        font-size: 10px
+
+
+@import "media"
