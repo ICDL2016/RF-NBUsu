@@ -48,29 +48,44 @@ input {
   margin: 0 auto;
   padding: 10px;
   background: #999; }
+  .form-video {
+    position: relative;
+    pointer-events: none; }
+    .form-video::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      border: 30px solid transparent;
+      border-left: 40px solid #0a27a2;
+      pointer-events: all;
+      cursor: pointer; }
   .form-block {
     margin: 0 auto 20px;
     width: 350px;
     text-align: center; }
-  .form-video {
-    width: 100%;
-    height: 200px; }
-    .form-video iframe {
-      width: 100%;
-      height: 100%; }
   .form-checkbox__block {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2px;
+    width: 100%; }
   .form-input {
     width: 320px;
     margin-bottom: 10px;
-    padding: 5px 10px;
+    padding: 8px 10px;
     color: #808080; }
   .form-label {
     margin: 0 0 0 10px;
     text-align: left;
     color: #eee;
-    font-size: 10px; }
+    font-size: 10px;
+    cursor: pointer; }
   .form-title {
     font-family: "ArialBold", sans-serif;
     font-weight: 700;
@@ -111,11 +126,11 @@ input {
       font-size: 12px; }
 
 .form input::-webkit-input-placeholder {
-  color: #808080;
+  color: rgba(128, 128, 128, 0.5);
   font-size: 14px; }
 
 .form input:-moz-placeholder {
-  color: #808080;
+  color: rgba(128, 128, 128, 0.5);
   font-size: 14px; }
 
 .title {
@@ -125,7 +140,7 @@ input {
   line-height: 1; }
 
 .descr {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #999;
   font-size: 15px;
   text-align: justify; }
@@ -223,6 +238,9 @@ input {
 
   .form-block {
     width: 300px; }
+  .form-video {
+    height: 168px !important;
+    width: 100% !important; }
   .form-input {
     width: 280px; }
   .form-title {
@@ -239,5 +257,5 @@ input {
   .knowledge-img {
     flex-direction: column; }
     .knowledge-img img {
-      width: auto;
+      width: 200px;
       margin-bottom: 10px; } }

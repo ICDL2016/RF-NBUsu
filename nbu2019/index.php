@@ -23,10 +23,7 @@
     <div class="form-title">Полный курс кулинарного дела</div>
     <div class="form-title form-title__second">КУЛИНАР - ЭКСПЕРТ</div>
     <div class="form-descr">Повар 6-го разряда</div>
-    <div class="form-video">
-        <iframe src="https://www.youtube.com/embed/9Piaa7mgzjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
+    <div class="form-video youtube" id="9Piaa7mgzjc" style="width: 350px; height: 200px"></div>
 
     <form action="#" class="form">
         <input class="form-input" type="text" placeholder="Имя" name="name">
@@ -91,9 +88,7 @@
     <div class="form-title">Полный курс кулинарного дела</div>
     <div class="form-title form-title__second">КУЛИНАР - ЭКСПЕРТ</div>
     <div class="form-descr">Повар 6-го разряда</div>
-    <div class="form-video">
-        <iframe src="https://www.youtube.com/embed/9Piaa7mgzjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div class="form-video youtube" id="9Piaa7mgzjc" style="width: 350px; height: 200px"></div>
 
     <form action="#" class="form form2">
         <input class="form-input" type="text" placeholder="Имя" name="name">
@@ -145,6 +140,9 @@
     </ul>
     <div class="footer-descr">Профессиональные курсы с 2001 года</div>
 </footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
