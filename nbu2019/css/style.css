@@ -39,7 +39,11 @@ a {
   width: 940px; }
 
 input {
-  outline: none; }
+  outline: none;
+  border: transparent !important; }
+  input:hover, input:focus, input:active {
+    border: transparent !important;
+    outline: none !important; }
 
 .form {
   display: flex;
