@@ -14,18 +14,32 @@
   box-sizing: border-box; }
 
 body {
+  margin: 0;
   font-family: "ArialMT", sans-serif; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
 .logo {
-  margin: 10px auto 40px;
+  margin: 10px auto 20px;
   text-align: center;
   color: #999; }
   .logo-title {
+    margin-bottom: 5px;
     font-size: 21px;
     font-family: "ArialBold", sans-serif;
     font-weight: 700; }
     .logo-title__second {
       font-size: 13px; }
+
+.container {
+  width: 940px; }
+
+input {
+  outline: none; }
 
 .form {
   display: flex;
@@ -58,7 +72,6 @@ body {
     color: #eee;
     font-size: 10px; }
   .form-title {
-    margin-bottom: -5px;
     font-family: "ArialBold", sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -115,7 +128,7 @@ body {
   margin-bottom: 10px;
   color: #999;
   font-size: 15px;
-  text-align: center; }
+  text-align: justify; }
 
 .section {
   margin: 0 auto 20px;
@@ -161,8 +174,7 @@ body {
     padding: 7px 3px 5px;
     width: 30px;
     -webkit-transition: 0.3s;
-    transition: 0.3s;
-    text-decoration: none; }
+    transition: 0.3s; }
     .icons a:hover {
       text-decoration: none;
       background: #0a27a2; }
@@ -181,13 +193,21 @@ body {
       margin: 5px 0; }
     .footer-list li a {
       color: #fff; }
+      .footer-list li a:hover {
+        text-decoration: underline; }
   .footer-descr {
     font-size: 10px; }
 
 @media screen and (max-width: 991px) {
   .diploma-license img {
-    width: 250px; } }
+    width: 250px; }
+
+  .container {
+    width: 700px; } }
 @media screen and (max-width: 767px) {
+  .container {
+    width: 500px; }
+
   .knowledge-img {
     justify-content: space-between; }
     .knowledge-img img {
@@ -196,10 +216,15 @@ body {
   .diploma-license img {
     width: 180px; } }
 @media screen and (max-width: 575px) {
+  .container {
+    width: 100%; }
+
   .form-block {
     width: 300px; }
   .form-input {
     width: 280px; }
+  .form-title {
+    font-size: 18px; }
 
   .logo {
     margin-bottom: 20px; }
