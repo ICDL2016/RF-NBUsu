@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Тестовое задание | Прыгин Артем</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,19 +24,22 @@
     <div class="form-title">Полный курс кулинарного дела</div>
     <div class="form-title form-title__second">КУЛИНАР - ЭКСПЕРТ</div>
     <div class="form-descr">Повар 6-го разряда</div>
-    <div class="form-img">
-        <img src="img/cook.jpg" alt="cook">
+    <div class="form-video">
+        <iframe src="https://www.youtube.com/embed/9Piaa7mgzjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+
 
     <form action="#" class="form">
         <input class="form-input" type="text" placeholder="Имя" name="name">
         <input class="form-input" type="email" placeholder="Email" name="email">
 
-        <input class="form-checkbox" type="checkbox" name="checkbox" id="checkbox">
-        <label class="form-label" for="checkbox">Согласие на обработку персональных данных</label>
+        <div class="form-checkbox__block">
+            <input class="form-checkbox" type="checkbox" name="checkbox" id="checkbox" checked>
+            <label class="form-label" for="checkbox">Согласие на обработку персональных данных</label>
+        </div>
     </form>
 
-    <div class="form-bottom">
+    <div class="form-bottom" onclick="document.querySelector('.form').submit()">
         <span class="form-bottom__top">Начать обучение бесплатно</span>
         <span class="form-bottom__second">и посмотреть свой будущий диплом</span>
         <span class="form-bottom__date">сегодня 25.04.2019</span>
@@ -88,19 +92,21 @@
     <div class="form-title">Полный курс кулинарного дела</div>
     <div class="form-title form-title__second">КУЛИНАР - ЭКСПЕРТ</div>
     <div class="form-descr">Повар 6-го разряда</div>
-    <div class="form-img">
-        <img src="img/cook.jpg" alt="cook">
+    <div class="form-video">
+        <iframe src="https://www.youtube.com/embed/9Piaa7mgzjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <form action="#" class="form">
+    <form action="#" class="form form2">
         <input class="form-input" type="text" placeholder="Имя" name="name">
         <input class="form-input" type="email" placeholder="Email" name="email">
 
-        <input class="form-checkbox" type="checkbox" name="checkbox" id="checkbox">
-        <label class="form-label" for="checkbox">Согласие на обработку персональных данных</label>
+        <div class="form-checkbox__block">
+            <input class="form-checkbox" type="checkbox" name="checkbox" id="checkbox" checked>
+            <label class="form-label" for="checkbox">Согласие на обработку персональных данных</label>
+        </div>
     </form>
 
-    <div class="form-bottom">
+    <div class="form-bottom" onclick="document.querySelector('.form2').submit()">
         <span class="form-bottom__top">Начать обучение бесплатно</span>
         <span class="form-bottom__second">и посмотреть свой будущий диплом</span>
         <span class="form-bottom__date">сегодня 25.04.2019</span>
@@ -109,30 +115,24 @@
 
 <!--Иконки-->
 <div class="icons">
-    <div class="icon">
-        <img src="img/fb.svg" alt="social">
-    </div>
-    <div class="icon">
-        <img src="img/vk.svg" alt="social">
-    </div>
-    <div class="icon">
-        <img src="img/ok.svg" alt="social">
-    </div>
-    <div class="icon">
-        <img src="img/twitter.svg" alt="social">
-    </div>
-    <div class="icon">
-        <img src="img/linkedin.svg" alt="social">
-    </div>
-    <div class="icon">
-        <img src="img/pinterest.svg" alt="social">
-    </div>
-    <div class="icon">
-        <img src="img/fb.svg" alt="social">
-    </div>
-    <div class="icon">
-        <img src="img/vk.svg" alt="social">
-    </div>
+    <!-- Фейсбук --->
+    <a href="" class="fa fa-facebook social-likes__widget social-likes__widget_facebook"><span class="social-likes__button social-likes__button_facebook"><span class="social-likes__icon social-likes__icon_facebook"></span></span><span class="social-likes__counter social-likes__counter_facebook social-likes__counter_empty"></span></a>
+    <!-- Вконтакте --->
+    <a href="" class="fa fa-vk social-likes__widget social-likes__widget_vkontakte"><span class="social-likes__button social-likes__button_vkontakte"><span class="social-likes__icon social-likes__icon_vkontakte"></span></span><span class="social-likes__counter social-likes__counter_vkontakte social-likes__counter_empty"></span></a>
+    <!-- Одноклассники --->
+    <a href="" class="fa fa-odnoklassniki social-likes__widget social-likes__widget_odnoklassniki"><span class="social-likes__button social-likes__button_odnoklassniki"><span class="social-likes__icon social-likes__icon_odnoklassniki"></span></span><span class="social-likes__counter social-likes__counter_odnoklassniki social-likes__counter_empty"></span></a>
+    <!-- Google Plus
+    <a href="" class="fa fa-google-plus plusone"></a> --->
+    <!-- Твиттер --->
+    <a href="" class="fa fa-twitter social-likes__widget social-likes__widget_twitter"><span class="social-likes__button social-likes__button_twitter"><span class="social-likes__icon social-likes__icon_twitter"></span></span></a>
+    <!-- LinkedIn --->
+    <a href="" class="fa fa-linkedin social-likes__widget social-likes__widget_linkedin"><span class="social-likes__button social-likes__button_linkedin"><span class="social-likes__icon social-likes__icon_linkedin"></span></span></a>
+    <!-- Tumblr --->
+    <a href="" class="fa fa-tumblr social-likes__widget social-likes__widget_tumblr"><span class="social-likes__button social-likes__button_tumblr"><span class="social-likes__icon social-likes__icon_tumblr"></span></span></a>
+    <!-- Pinterest --->
+    <a href="" class="fa fa-pinterest social-likes__widget social-likes__widget_pinterest"><span class="social-likes__button social-likes__button_pinterest"><span class="social-likes__icon social-likes__icon_pinterest"></span></span><span class="social-likes__counter social-likes__counter_pinterest social-likes__counter_empty"></span></a>
+    <!-- Reddit --->
+    <a href="" class="fa fa-reddit social-likes__widget social-likes__widget_reddit"><span class="social-likes__button social-likes__button_reddit"><span class="social-likes__icon social-likes__icon_reddit"></span></span></a>
 </div>
 
 <!--Футер-->
