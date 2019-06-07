@@ -5,9 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Тестовое задание | Прыгин Артем</title>
+    <title>Новый бизнес университет</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
@@ -23,7 +23,8 @@
     <div class="form-title">Полный курс кулинарного дела</div>
     <div class="form-title form-title__second">КУЛИНАР - ЭКСПЕРТ</div>
     <div class="form-descr">Повар 6-го разряда</div>
-    <div class="form-video youtube" id="9Piaa7mgzjc" style="width: 350px; height: 200px"></div>
+    <div class="form-video form-video1" onclick="play1(event)"></div>
+    <div id="divPlayer1"></div>
 
     <form action="#" class="form">
         <input class="form-input" type="text" placeholder="Имя" name="name">
@@ -88,7 +89,8 @@
     <div class="form-title">Полный курс кулинарного дела</div>
     <div class="form-title form-title__second">КУЛИНАР - ЭКСПЕРТ</div>
     <div class="form-descr">Повар 6-го разряда</div>
-    <div class="form-video youtube" id="9Piaa7mgzjc" style="width: 350px; height: 200px"></div>
+    <div class="form-video form-video2" onclick="play2(event)"></div>
+    <div id="divPlayer2"></div>
 
     <form action="#" class="form form2">
         <input class="form-input" type="text" placeholder="Имя" name="name">
@@ -129,6 +131,7 @@
     <a href="" class="fa fa-reddit social-likes__widget social-likes__widget_reddit"><span class="social-likes__button social-likes__button_reddit"><span class="social-likes__icon social-likes__icon_reddit"></span></span></a>
 </div>
 
+
 <!--Футер-->
 <footer class="footer">
     <ul class="footer-list">
@@ -142,7 +145,8 @@
 </footer>
 
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js?v=3"></script>
+
 
 </body>
 </html>

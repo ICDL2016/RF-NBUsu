@@ -38,12 +38,19 @@ a {
 .container {
   width: 940px; }
 
+.hidden {
+  display: none; }
+
 input {
   outline: none;
   border: transparent !important; }
   input:hover, input:focus, input:active {
     border: transparent !important;
     outline: none !important; }
+
+#divPlayer1, #divPlayer2 {
+  display: none;
+  margin-bottom: -5px; }
 
 .form {
   display: flex;
@@ -53,6 +60,10 @@ input {
   padding: 10px;
   background: #999; }
   .form-video {
+    background: url("../img/cook.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 200px;
     position: relative;
     pointer-events: none; }
     .form-video::after {
