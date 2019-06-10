@@ -28,3 +28,26 @@ function play2(event) {
     $('#divPlayer2').show();
     player2.playVideo()
 }
+
+// псевдовалидация
+
+let emptyTop = false;
+let emptyBottom = false;
+$('.form-input__name').on('click', function () {
+
+    emptyTop = true;
+    if (emptyBottom === true && ($(this).parent().children('.form-input__email').val().length === 0 || $(this).parent().children('.form-input__email').val().indexOf('@') === -1)) {
+        $(this).parent().children('.form-input__span-email').show();
+    }
+}).on('input', function () {
+    $(this).parent().children('.form-input__span-name').hide();
+});
+
+$('.form-input__email').on('click', function () {
+    emptyBottom = true;
+    if (emptyTop === true && $(this).parent().children('.form-input__name').val().length === 0) {
+        $(this).parent().children('.form-input__span-name').show();
+    }
+}).on('input', function () {
+    $(this).parent().children('.form-input__span-email').hide();
+});

@@ -7,13 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Новый бизнес университет</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css?v=3">
+    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
 
 <!--Лого и заголовки-->
 <div class="logo">
-    <img src="img/logo.jpg" alt="logo">
+    <a href="https://nbu.su/" target="_blank"><img src="img/logo.png" alt="logo" width="150"></a>
     <h1 class="logo-title">НОВЫЙ БИЗНЕС УНИВЕРСИТЕТ</h1>
     <h3 class="logo-title__second">Международный Центр Дистанционного Образования</h3>
 </div>
@@ -27,20 +28,25 @@
     <div id="divPlayer1"></div>
 
     <form action="#" class="form">
-        <input class="form-input" type="text" placeholder="Имя" name="name">
-        <input class="form-input" type="email" placeholder="Email" name="email">
+        <div class="form-body">
+            <input class="form-input form-input__name" type="text" placeholder="Имя" name="name" required="required" />
+            <span class="form-input__span form-input__span-name">Поле "Имя" обязательно к заполнению</span>
+            <input class="form-input form-input__email" type="email" placeholder="Email" name="email" required="required" />
+            <span class="form-input__span form-input__span-email">Поле "Email" обязательно к заполнению и должно содержать существующий электронный адрес</span>
 
-        <div class="form-checkbox__block">
-            <input class="form-checkbox" type="checkbox" name="checkbox" id="checkbox" checked>
-            <label class="form-label" for="checkbox">Согласие на обработку персональных данных</label>
+            <div class="form-checkbox__block">
+                <input class="form-checkbox" type="checkbox" name="checkbox" id="checkbox" checked>
+                <label class="form-label" for="checkbox">Согласие на обработку персональных данных</label>
+            </div>
         </div>
-    </form>
 
-    <div class="form-bottom" onclick="document.querySelector('.form').submit()">
-        <span class="form-bottom__top">Начать обучение бесплатно</span>
-        <span class="form-bottom__second">и посмотреть свой будущий диплом</span>
-        <span class="form-bottom__date">сегодня 25.04.2019</span>
-    </div>
+        <button type="submit" class="form-bottom form-bottom1">
+            <span class="form-bottom__top">Начать обучение бесплатно</span>
+            <span class="form-bottom__second">и посмотреть свой будущий диплом</span>
+            <span class="form-bottom__date">сегодня 25.04.2019</span>
+        </button>
+
+    </form>
 </div>
 
 <!--Получи диплом-->
@@ -50,21 +56,21 @@
 
     <div class="diploma-license">
         <div class="diploma-license__top">
-            <img src="img/diploma1.jpg" alt="diploma">
+            <a href="img/diploma1.jpg" class="fancybox"><img src="img/diploma1.jpg" alt="diploma"></a>
             <span class="diploma-license__span">Лицензия на образовательную деятельность №038379</span>
         </div>
 
         <div class="diploma-license__middle">
             <div class="diploma-license__middle-img">
-                <img src="img/diploma2.jpg" alt="diploma">
-                <img src="img/diploma3.jpg" alt="diploma">
-                <img src="img/diploma4.jpg" alt="diploma">
+                <a href="img/diploma2.jpg" class="fancybox"><img src="img/diploma2.jpg" alt="diploma"></a>
+                <a href="img/diploma3.jpg" class="fancybox"><img src="img/diploma3.jpg" alt="diploma"></a>
+                <a href="img/diploma4.jpg" class="fancybox"><img src="img/diploma4.jpg" alt="diploma"></a>
             </div>
             <span class="diploma-license__span">Лицензия на образовательную деятельность №038379</span>
         </div>
 
         <div class="diploma-license__bottom">
-            <img src="img/diploma5.jpg" alt="diploma">
+            <a href="img/diploma5.jpg" class="fancybox"><img src="img/diploma5.jpg" alt="diploma"></a>
             <span class="diploma-license__span">Лицензия на образовательную деятельность №038379</span>
         </div>
     </div>
@@ -76,9 +82,9 @@
     <div class="descr knowledge-descr">Этот содержательный курс даст вам именно те знания, которые вы ищете. Он поможет вам обрести уверенность и стать более компетентным в своей сфере. Не откладывайте ваше развитие и профессиональный рост на потом - запишитесь на курс</div>
 
     <div class="knowledge-img">
-        <img src="img/course1.jpg" alt="diploma">
-        <img src="img/course2.jpg" alt="diploma">
-        <img src="img/course3.jpg" alt="diploma">
+        <a href="img/course1.jpg" class="fancybox"><img src="img/course1.jpg" alt="diploma"></a>
+        <a href="img/course2.jpg" class="fancybox"><img src="img/course2.jpg" alt="diploma"></a>
+        <a href="img/course3.jpg" class="fancybox"><img src="img/course3.jpg" alt="diploma"></a>
     </div>
 
     <div class="descr knowledge-descr">Этот содержательный курс даст вам именно те знания, которые вы ищете. Он поможет вам обрести уверенность и стать более компетентным в своей сфере. Не откладывайте ваше развитие и профессиональный рост на потом - запишитесь на курс</div>
@@ -92,21 +98,27 @@
     <div class="form-video form-video2" onclick="play2(event)"></div>
     <div id="divPlayer2"></div>
 
-    <form action="#" class="form form2">
-        <input class="form-input" type="text" placeholder="Имя" name="name">
-        <input class="form-input" type="email" placeholder="Email" name="email">
+    <form action="#" class="form">
+        <div class="form-body">
+            <input class="form-input form-input__name" type="text" placeholder="Имя" name="name" required="required" />
+            <span class="form-input__span form-input__span-name">Поле "Имя" обязательно к заполнению</span>
+            <input class="form-input form-input__email" type="email" placeholder="Email" name="email" required="required" />
+            <span class="form-input__span form-input__span-email">Поле "Email" обязательно к заполнению и должно содержать существующий электронный адрес</span>
 
-        <div class="form-checkbox__block">
-            <input class="form-checkbox" type="checkbox" name="checkbox" id="checkbox" checked>
-            <label class="form-label" for="checkbox">Согласие на обработку персональных данных</label>
+            <div class="form-checkbox__block">
+                <input class="form-checkbox" type="checkbox" name="checkbox" id="checkbox" checked>
+                <label class="form-label" for="checkbox">Согласие на обработку персональных данных</label>
+            </div>
         </div>
+
+        <button type="submit" class="form-bottom form-bottom1">
+            <span class="form-bottom__top">Начать обучение бесплатно</span>
+            <span class="form-bottom__second">и посмотреть свой будущий диплом</span>
+            <span class="form-bottom__date">сегодня 25.04.2019</span>
+        </button>
+
     </form>
 
-    <div class="form-bottom" onclick="document.querySelector('.form2').submit()">
-        <span class="form-bottom__top">Начать обучение бесплатно</span>
-        <span class="form-bottom__second">и посмотреть свой будущий диплом</span>
-        <span class="form-bottom__date">сегодня 25.04.2019</span>
-    </div>
 </div>
 
 <!--Иконки-->
@@ -145,8 +157,11 @@
 </footer>
 
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/main.js?v=3"></script>
-
+<script src="js/main.js?v=4"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script>
+    $('.fancybox').fancybox();
+</script>
 
 </body>
 </html>
