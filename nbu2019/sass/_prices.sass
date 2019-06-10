@@ -1,0 +1,38 @@
+.prices
+    &-table
+        margin: 0 auto 30px
+        width: 400px
+        font-size: 12px
+        font-weight: 700
+        &__title
+            padding: 5px
+            text-align: center
+            color: #fff
+            background: $headers
+            border: 1px solid $headers
+        &__block
+            display: flex
+            color: $headers
+            &-title, &-price, &-hours
+                padding: 5px
+            &-price, &-hours
+                text-align: center
+            &-title, &-price
+                width: 40%
+                border-top: 1px solid $headers
+            &-hours
+                width: 20%
+                border: 1px solid $headers
+                border-bottom: none
+            &-price
+                &__linethrough
+                    text-decoration: line-through
+                    font-weight: 300
+
+
+
+@media screen and (max-width: 400px)
+    .prices
+        &-table
+            padding: 0 10px
+            width: 100%

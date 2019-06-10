@@ -1,0 +1,166 @@
+.contacts
+    &-title
+        margin-bottom: 20px
+        &__write
+            color: $text
+            font-size: 12px
+            font-weight: 300
+    &-form
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: 20px auto 30px
+        background: $text
+        width: 350px
+        &__top
+            padding: 10px 0
+    &-bottom
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: auto
+        padding: 10px
+        background: $headers
+        color: #fff
+        cursor: pointer
+        border: none
+        width: 100%
+        -webkit-transition: all .3s
+        -moz-transition: all .3s
+        -ms-transition: all .3s
+        -o-transition: all .3s
+        transition: all .3s
+        &:hover
+            background: lighten($headers, 10)
+
+    &-consult
+        &__call, &__consult
+            color: $text
+            font-size: 12px
+            font-weight: 300
+        &__phone
+            display: block
+            margin: 20px auto
+            font-size: 20px
+            font-weight: 700
+            color: $headers
+            &:hover
+                text-decoration: underline
+        &__consult
+            margin-bottom: 20px
+
+        &__workers
+            display: flex
+            justify-content: space-around
+            margin: 0 auto 40px
+            width: 620px
+            &-block
+                display: flex
+                align-items: flex-end
+                height: 200px
+                width: 200px
+                cursor: pointer
+                &__oksana
+                    background: url('../img/contacts/person.png') center no-repeat
+                    -webkit-background-size: cover
+                    background-size: cover
+                &__ivan
+                    background: url('../img/contacts/person.png') center no-repeat
+                    -webkit-background-size: cover
+                    background-size: cover
+                &__ekaterina
+                    background: url('../img/contacts/person.png') center no-repeat
+                    -webkit-background-size: cover
+                    background-size: cover
+                &:hover > &__name
+                    background: rgba(#fff, .7)
+                    color: $headers
+                &__name
+                    padding: 5px
+                    color: #fff
+                    font-weight: 700
+                    font-size: 12px
+                    width: 100%
+                    background: rgba($headers, .7)
+                    -webkit-transition: all .2s
+                    -moz-transition: all .2s
+                    -ms-transition: all .2s
+                    -o-transition: all .2s
+                    transition: all .2s
+
+    &-address
+        &__title
+            color: $text
+            font-size: 12px
+            font-weight: 300
+        &__address
+            display: block
+            margin: 20px auto
+            font-size: 20px
+            font-weight: 700
+            color: $headers
+
+
+    &-map
+        &__photos
+            display: flex
+            margin: 20px auto
+            width: 1200px
+            justify-content: space-between
+            img
+                width: 290px
+
+.contacts-form input::-webkit-input-placeholder
+    color: rgba(#808080, .5)
+    font-size: 14px
+
+.contacts-form input:-moz-placeholder
+    color: rgba(#808080, .5)
+    font-size: 14px
+
+.contacts-form textarea::-webkit-input-placeholder
+    color: rgba(#808080, .5)
+    font-size: 14px
+    font-family: 'ArialMT', sans-serif
+
+.contacts-form textarea:-moz-placeholder
+    color: rgba(#808080, .5)
+    font-size: 14px
+    font-family: 'ArialMT', sans-serif
+
+
+@media screen and (max-width: 1199px)
+    .contacts
+        &-map
+            width: 100%
+            &__photos
+                width: 575px
+                flex-wrap: wrap
+                img
+                    width: 280px
+                    margin-bottom: 10px
+
+@media screen and (max-width: 767px)
+    .contacts
+        &-consult
+            &__workers
+                width: 100%
+                justify-content: center
+                flex-wrap: wrap
+                &-block
+                    margin-bottom: 10px
+                    width: 251px
+                    height: 250px
+
+
+@media screen and (max-width: 575px)
+    .contacts
+        &-form
+            width: 300px
+        &-map
+            &__photos
+                justify-content: center
+                width: 100%
+                img
+                    width: 300px

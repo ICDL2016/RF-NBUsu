@@ -1,0 +1,62 @@
+.cook
+    &-title
+        margin-bottom: 20px
+        &__choose
+            margin-bottom: 20px
+            font-size: 13px
+    &-courses
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &-block
+        margin-bottom: 10px
+        width: 300px
+        cursor: pointer
+        &__img
+            background: url('../img/cook.jpg') center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+            height: 150px
+        &__descr
+            padding: 10px
+            background: $text
+            -webkit-transition: all .3s
+            -moz-transition: all .3s
+            -ms-transition: all .3s
+            -o-transition: all .3s
+            transition: all .3s
+            &-title
+                font-weight: 700
+                color: $headers
+                -webkit-transition: all .3s
+                -moz-transition: all .3s
+                -ms-transition: all .3s
+                -o-transition: all .3s
+                transition: all .3s
+            &-speciality
+                font-size: 13px
+                color: #fff
+                -webkit-transition: all .3s
+                -moz-transition: all .3s
+                -ms-transition: all .3s
+                -o-transition: all .3s
+                transition: all .3s
+        &:hover > &__descr
+            background: $headers
+        &:hover > &__descr > &__descr-title
+            color: #fff
+        &:hover > &__descr > &__descr-speciality
+            color: $text
+
+
+@media screen and (max-width: 991px)
+    .cook
+        &-courses
+            margin: auto
+            width: 620px
+
+@media screen and (max-width: 991px)
+    .cook
+        &-courses
+            justify-content: center
+            width: 100%

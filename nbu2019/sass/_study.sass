@@ -1,0 +1,100 @@
+.study
+    margin: auto
+    width: 1200px
+    text-align: center
+    &-blocks
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        margin-bottom: 20px
+    &-block
+        display: flex
+        align-items: flex-end
+        margin-bottom: 10px
+        height: 145px
+        width: 290px
+        -webkit-background-size: cover
+        background-size: cover
+        background-repeat: no-repeat
+        background-position-y: 10%
+        cursor: pointer
+        outline: 3px solid transparent
+        -webkit-transition: all .3s
+        -moz-transition: all .3s
+        -ms-transition: all .3s
+        -o-transition: all .3s
+        transition: all .3s
+        &:hover
+            outline: 3px solid $headers
+        &:hover > &__title
+            background: rgba($headers, .7)
+            color: #fff
+        &__title
+            padding: 5px
+            text-transform: uppercase
+            color: $headers
+            font-weight: 700
+            font-size: 12px
+            width: 100%
+            background: rgba(white, .7)
+            -webkit-transition: all .1s
+            -moz-transition: all .1s
+            -ms-transition: all .1s
+            -o-transition: all .1s
+            transition: all .1s
+
+        &__marketing
+            background: url('../img/study/marketing.jpg')
+        &__adv
+            background: url('../img/study/adv.jpg')
+        &__design
+            background: url('../img/study/design.jpg')
+        &__develop
+            background: url('../img/study/develop.jpg')
+        &__economy
+            background: url('../img/study/economy.jpg')
+        &__hotels
+            background: url('../img/study/hotels.jpg')
+        &__languages
+            background: url('../img/study/languages.jpg')
+        &__manager
+            background: url('../img/study/manager.jpg')
+        &__psycho
+            background: url('../img/study/psycho.jpg')
+        &__restaurant
+            background: url('../img/study/restaurant.jpg')
+        &__style
+            background: url('../img/study/style.jpg')
+        &__tourism
+            background: url('../img/study/tourism.jpg')
+
+
+.begin-study
+    &__title
+        margin: 0 auto 10px
+        max-width: 700px
+    &__video
+        margin: 0 auto 10px
+        width: 350px
+
+
+
+
+
+@media screen and (max-width: 1199px)
+    .study
+        width: 900px
+
+@media screen and (max-width: 991px)
+    .study
+        width: 700px
+
+@media screen and (max-width: 767px)
+    .study
+        width: 100%
+
+@media screen and (max-width: 599px)
+    .study
+        &-block
+            width: 300px
+            height: 150px
