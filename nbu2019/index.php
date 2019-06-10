@@ -29,9 +29,9 @@
 
     <form action="#" class="form">
         <div class="form-body">
-            <input class="form-input form-input__name" type="text" placeholder="Имя" name="name" required="required" />
+            <input class="form-input form-input__name" type="text" placeholder="Имя" name="name">
             <span class="form-input__span form-input__span-name">Поле "Имя" обязательно к заполнению</span>
-            <input class="form-input form-input__email" type="email" placeholder="Email" name="email" required="required" />
+            <input class="form-input form-input__email" type="email" placeholder="Email" name="email">
             <span class="form-input__span form-input__span-email">Поле "Email" обязательно к заполнению и должно содержать существующий электронный адрес</span>
 
             <div class="form-checkbox__block">
@@ -100,9 +100,9 @@
 
     <form action="#" class="form">
         <div class="form-body">
-            <input class="form-input form-input__name" type="text" placeholder="Имя" name="name" required="required" />
+            <input class="form-input form-input__name" type="text" placeholder="Имя" name="name">
             <span class="form-input__span form-input__span-name">Поле "Имя" обязательно к заполнению</span>
-            <input class="form-input form-input__email" type="email" placeholder="Email" name="email" required="required" />
+            <input class="form-input form-input__email" type="email" placeholder="Email" name="email">
             <span class="form-input__span form-input__span-email">Поле "Email" обязательно к заполнению и должно содержать существующий электронный адрес</span>
 
             <div class="form-checkbox__block">
