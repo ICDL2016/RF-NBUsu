@@ -8,7 +8,7 @@
     <title>Новый бизнес университет</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
-    <link rel="stylesheet" href="css/style.css?v=5.1">
+    <link rel="stylesheet" href="css/style.css?v=5.2">
 </head>
 <body>
 
@@ -31,7 +31,7 @@
         <div class="form-body">
             <input class="form-input form-input__name" type="text" placeholder="Имя" name="name">
             <span class="form-input__span form-input__span-name">Поле "Имя" обязательно к заполнению</span>
-            <input class="form-input form-input__email" type="email" placeholder="Email" name="email">
+            <input class="form-input form-input__email" type="text" placeholder="Email" name="email">
             <span class="form-input__span form-input__span-email">Поле "Email" обязательно к заполнению и должно содержать существующий электронный адрес</span>
 
             <div class="form-checkbox__block">
@@ -40,11 +40,11 @@
             </div>
         </div>
 
-        <button type="submit" class="form-bottom form-bottom1">
+        <div class="form-bottom form-bottom1">
             <span class="form-bottom__top">Начать обучение бесплатно</span>
             <span class="form-bottom__second">и посмотреть свой будущий диплом</span>
             <span class="form-bottom__date">сегодня 25.04.2019</span>
-        </button>
+        </div>
 
     </form>
 </div>
@@ -102,7 +102,7 @@
         <div class="form-body">
             <input class="form-input form-input__name" type="text" placeholder="Имя" name="name">
             <span class="form-input__span form-input__span-name">Поле "Имя" обязательно к заполнению</span>
-            <input class="form-input form-input__email" type="email" placeholder="Email" name="email">
+            <input class="form-input form-input__email" type="text" placeholder="Email" name="email">
             <span class="form-input__span form-input__span-email">Поле "Email" обязательно к заполнению и должно содержать существующий электронный адрес</span>
 
             <div class="form-checkbox__block">
@@ -111,11 +111,11 @@
             </div>
         </div>
 
-        <button type="submit" class="form-bottom form-bottom1">
+        <div class="form-bottom form-bottom1">
             <span class="form-bottom__top">Начать обучение бесплатно</span>
             <span class="form-bottom__second">и посмотреть свой будущий диплом</span>
             <span class="form-bottom__date">сегодня 25.04.2019</span>
-        </button>
+        </div>
 
     </form>
 
@@ -157,7 +157,7 @@
 </footer>
 
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/main.js?v=4"></script>
+<script src="js/main.js?v=5.2"></script>
 <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
 <script>
     $('.fancybox').fancybox();

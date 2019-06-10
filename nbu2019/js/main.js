@@ -51,3 +51,22 @@ $('.form-input__email').on('click', function () {
 }).on('input', function () {
     $(this).parent().children('.form-input__span-email').hide();
 });
+
+$('.form-bottom').on('click', function () {
+   event.preventDefault();
+   let send = true;
+
+   if ($(this).parent().children('.form-body').children('.form-input__name').val().length === 0) {
+       $(this).parent().children('.form-body').children('.form-input__span-name').show();
+       send = false;
+   }
+
+    if ($(this).parent().children('.form-body').children('.form-input__email').val().length === 0 || $(this).parent().children('.form-body').children('.form-input__email').val().indexOf('@') === -1) {
+        $(this).parent().children('.form-body').children('.form-input__span-email').show();
+        send = false;
+    }
+
+    if (send === true) {
+        $(this).parent().submit();
+    }
+});
