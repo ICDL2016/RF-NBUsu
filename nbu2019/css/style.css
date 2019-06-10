@@ -162,10 +162,9 @@ input {
     transition: all 0.3s; }
     .form-bottom:hover {
       background: #0d33d2; }
-    .form-bottom:hover > .form-bottom__top {
-      font-weight: 700; }
     .form-bottom__top {
-      font-size: 18px; }
+      font-size: 18px;
+      font-weight: 700; }
     .form-bottom__second {
       font-size: 14px; }
     .form-bottom__date {
