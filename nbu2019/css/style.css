@@ -431,6 +431,9 @@ input {
   .study {
     width: 100%; } }
 @media screen and (max-width: 599px) {
+  .begin-study__video {
+    width: 300px; }
+
   .study-block {
     width: 300px;
     height: 150px; } }
