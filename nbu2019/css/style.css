@@ -489,7 +489,7 @@ input {
     width: 620px; } }
 @media screen and (max-width: 991px) {
   .cook-courses {
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%; } }
 .about-title {
   margin-bottom: 30px;
