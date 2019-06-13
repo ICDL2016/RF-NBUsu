@@ -24,13 +24,13 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none; }
 
-input:active, input:focus {
+input:active, input:focus, textarea:active, textarea:focus {
   outline: none !important; }
 
-input::-moz-focus-inner {
+input::-moz-focus-inner, textarea::-moz-focus-inner {
   border: 0 !important; }
 
-input:focus {
+input:focus, textarea:focus {
   outline-style: none;
   outline-width: 0 !important;
   outline-color: transparent !important; }
@@ -115,7 +115,8 @@ input {
     width: 100%;
     margin-bottom: 10px;
     padding: 8px 10px;
-    color: #808080; }
+    color: #808080;
+    font-family: ArialMT, sans-serif; }
     .form-input__span, .start-input__span {
       display: none;
       align-self: flex-start;
@@ -349,15 +350,18 @@ input {
   margin: auto;
   width: 1200px;
   text-align: center; }
+  .study-title {
+    margin-bottom: 20px;
+    font-size: 18px; }
   .study-blocks {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 20px; }
   .study-block {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 10px;
+    margin: 5px;
     height: 145px;
     width: 290px;
     -webkit-background-size: cover;
@@ -432,7 +436,8 @@ input {
     width: 100%; } }
 @media screen and (max-width: 599px) {
   .begin-study__video {
-    width: 300px; }
+    max-width: 300px;
+    width: auto; }
 
   .study-block {
     width: 300px;
@@ -445,9 +450,9 @@ input {
 .cook-courses {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: center; }
 .cook-block {
-  margin-bottom: 10px;
+  margin: 5px;
   width: 300px;
   cursor: pointer; }
   .cook-block__img {
@@ -492,7 +497,6 @@ input {
     width: 620px; } }
 @media screen and (max-width: 991px) {
   .cook-courses {
-    justify-content: space-around;
     width: 100%; } }
 .about-title {
   margin-bottom: 30px;
