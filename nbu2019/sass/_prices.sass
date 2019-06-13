@@ -10,19 +10,26 @@
             color: #fff
             background: $headers
             border: 1px solid $headers
+            &:hover
+                background: darken($headers, 5)
+                color: #fff
         &__block
             display: flex
             color: $headers
+            &:hover
+                background: darken($headers, 5)
+                cursor: pointer
+                color: #fff
             &-title, &-price, &-hours
                 padding: 5px
             &-price, &-hours
                 text-align: center
             &-title, &-price
                 width: 40%
-                border-top: 1px solid $headers
+                border-top: 2px solid $headers
             &-hours
                 width: 20%
-                border: 1px solid $headers
+                border: 2px solid $headers
                 border-bottom: none
             &-price
                 &__linethrough

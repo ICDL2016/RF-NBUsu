@@ -661,19 +661,26 @@ input {
     color: #fff;
     background: #0a27a2;
     border: 1px solid #0a27a2; }
+    .prices-table__title:hover {
+      background: #09218a;
+      color: #fff; }
   .prices-table__block {
     display: flex;
     color: #0a27a2; }
+    .prices-table__block:hover {
+      background: #09218a;
+      cursor: pointer;
+      color: #fff; }
     .prices-table__block-title, .prices-table__block-price, .prices-table__block-hours {
       padding: 5px; }
     .prices-table__block-price, .prices-table__block-hours {
       text-align: center; }
     .prices-table__block-title, .prices-table__block-price {
       width: 40%;
-      border-top: 1px solid #0a27a2; }
+      border-top: 2px solid #0a27a2; }
     .prices-table__block-hours {
       width: 20%;
-      border: 1px solid #0a27a2;
+      border: 2px solid #0a27a2;
       border-bottom: none; }
     .prices-table__block-price__linethrough {
       text-decoration: line-through;
