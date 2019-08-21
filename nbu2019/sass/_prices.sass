@@ -1,3 +1,44 @@
+.courses-table.all-courses 
+    width: 550px
+    margin: 0 auto 30px
+    color: #283794
+    background: #fff
+    font-weight: bold
+    font-size: 13px
+    border-collapse: collapse
+    
+.courses-table.all-courses .courses-table__row.courses-table__row_head
+    background: $headers
+    color: #fff
+    cursor: default
+
+.courses-table.all-courses .courses-table__row.courses-table__row_head .courses-table__cell 
+    text-align: center !important
+    padding: 4px 6px
+    color: #fff
+
+.courses-table.all-courses .courses-table__cell:first-child
+    border-left: none
+    text-align: left
+
+.courses-table.all-courses tr td:nth-child(2), .courses-table.all-courses tr td:nth-child(3), .courses-table.all-courses tr td:nth-child(4), .courses-table.all-courses tr td:nth-child(5)
+    width: auto
+
+.courses-table.all-courses .courses-table__cell:last-child 
+    border-right: none
+    white-space: nowrap
+    
+.courses-table.all-courses .courses-table__cell
+    position: relative
+    vertical-align: top
+    border: 2px solid $headers
+    text-align: center
+    padding: 6px
+    height: auto
+
+.courses-table.all-courses .nowrap
+    white-space: nowrap
+
 .prices
     &-table
         margin: 0 auto 30px
@@ -37,9 +78,66 @@
                     font-weight: 300
 
 
+@media (max-width: 550px) 
+    .courses-table.all-courses
+        width: 100%
+        font-size: 12.5px
+    .courses-table.all-courses .courses-table__row
+        cursor: pointer
+    .courses-table.all-courses .courses-table__row:hover .courses-table__cell
+        background: #000999
+        color: #fff
+    .courses-table.all-courses .courses-table__row:hover a
+        color: #fff
+    .courses-table.all-courses .courses-table__row.courses-table__row_head
+        background: #283794
+        color: #fff
+        cursor: default
+    .courses-table.all-courses .courses-table__row.courses-table__row_head:hover
+        background: #283794
+    .courses-table.all-courses .courses-table__row.courses-table__row_head .courses-table__cell
+        text-align: center !important
+        padding: 4px 6px
+        color: #fff
+    .courses-table.all-courses .courses-table__cell
+        position: relative
+        vertical-align: top
+        border: 2px solid #283794
+        text-align: center
+        padding: 6px
+        height: auto
+    .courses-table.all-courses .courses-table__cell:first-child
+        border-left: none
+        text-align: left
+    .courses-table.all-courses .courses-table__cell:last-child
+        border-right: none
+        white-space: nowrap
 
-@media screen and (max-width: 400px)
-    .prices
-        &-table
-            padding: 0 10px
-            width: 100%
+    .courses-table.all-courses .courses-table__row
+        background-color: #fff
+
+    .courses-table.all-courses tr td:nth-child(2),
+    .courses-table.all-courses tr td:nth-child(3),
+    .courses-table.all-courses tr td:nth-child(4),
+    .courses-table.all-courses tr td:nth-child(5)
+        width: auto
+
+@media (max-width: 550px) 
+    .courses-table.all-courses .courses-table__cell:last-child
+        white-space: normal
+    .courses-table.all-courses .courses-table__cell:last-child span
+        white-space: nowrap
+        display: block
+        margin-right: 0
+    .courses-table.all-courses .courses-table__price
+        font-size: 13px
+    .courses-table.all-courses .courses-table__price_old
+        margin-right: 10px
+        font-size: 12px
+        font-weight: normal
+        text-decoration: line-through
+    .courses-table.all-courses .fa
+        margin-left: -7px
+        transition: none
+    .courses-table.all-courses .fa.fa-rub
+        margin-left: -3px

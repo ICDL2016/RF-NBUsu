@@ -56,7 +56,7 @@ $('.form-bottom').on('click', function () {
    event.preventDefault();
    let send = true;
 
-   if ($(this).parent().children('.form-body').children('.form-input__name').val().length === 0) {
+   if ($(this).parent().children('.form-body').children('.form-input__name').length && $(this).parent().children('.form-body').children('.form-input__name').val().length === 0) {
        $(this).parent().children('.form-body').children('.form-input__span-name').show();
        send = false;
    }

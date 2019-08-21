@@ -15,35 +15,35 @@
         <div class="cook-block">
             <div class="cook-block__img"></div>
             <div class="cook-block__descr">
-                <div class="cook-block__descr-title">Полный курс кулинарного дела КУЛИНАР - ЭКСПЕРТ</div>
+                <div class="cook-block__descr-title">Полный курс кулинарного дела КУЛИНАР - ЭКСПЕРТ тест тест тест тест тест</div>
                 <div class="cook-block__descr-speciality">Повар 6-го разряда</div>
             </div>
         </div>
         <div class="cook-block">
             <div class="cook-block__img"></div>
             <div class="cook-block__descr">
-                <div class="cook-block__descr-title">Полный курс кулинарного дела КУЛИНАР - ЭКСПЕРТ</div>
+                <div class="cook-block__descr-title">Полный курс кулинарного дела КУЛИНАР - ЭКСПЕРТ тест тест</div>
                 <div class="cook-block__descr-speciality">Повар 6-го разряда</div>
             </div>
         </div>
         <div class="cook-block">
             <div class="cook-block__img"></div>
             <div class="cook-block__descr">
-                <div class="cook-block__descr-title">Полный курс кулинарного дела КУЛИНАР - ЭКСПЕРТ</div>
+                <div class="cook-block__descr-title">Полный курс кулинарного дела КУЛИНАР - ЭКСПЕРТ тест</div>
                 <div class="cook-block__descr-speciality">Повар 6-го разряда</div>
             </div>
         </div>
         <div class="cook-block">
             <div class="cook-block__img"></div>
             <div class="cook-block__descr">
-                <div class="cook-block__descr-title">Полный курс кулинарного дела КУЛИНАР - ЭКСПЕРТ</div>
+                <div class="cook-block__descr-title">Полный курс кулинарного дела КУЛИНАР - ЭКСПЕРТ тест тест тест</div>
                 <div class="cook-block__descr-speciality">Повар 6-го разряда</div>
             </div>
         </div>
         <div class="cook-block">
             <div class="cook-block__img"></div>
             <div class="cook-block__descr">
-                <div class="cook-block__descr-title">Полный курс кулинарного дела КУЛИНАР - ЭКСПЕРТ</div>
+                <div class="cook-block__descr-title">Полный курс кулинарного дела КУЛИНАР - ЭКСПЕРТ тест</div>
                 <div class="cook-block__descr-speciality">Повар 6-го разряда</div>
             </div>
         </div>
