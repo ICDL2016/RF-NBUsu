@@ -29,12 +29,16 @@
     white-space: nowrap
     
 .courses-table.all-courses .courses-table__cell
+    cursor: pointer
     position: relative
     vertical-align: top
     border: 2px solid $headers
     text-align: center
     padding: 6px
     height: auto
+
+.courses-table.all-courses .courses-table__row.courses-table__row_head .courses-table__cell
+    cursor: auto
 
 .courses-table.all-courses .nowrap
     white-space: nowrap
@@ -76,6 +80,10 @@
                 &__linethrough
                     text-decoration: line-through
                     font-weight: 300
+
+.courses-table.all-courses .courses-table__row:hover .courses-table__cell 
+    background: $headers
+    color: #fff
 
 
 @media (max-width: 550px) 

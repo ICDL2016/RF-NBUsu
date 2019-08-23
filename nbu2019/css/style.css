@@ -685,12 +685,16 @@ input {
   white-space: nowrap; }
 
 .courses-table.all-courses .courses-table__cell {
+  cursor: pointer;
   position: relative;
   vertical-align: top;
   border: 2px solid #0a27a2;
   text-align: center;
   padding: 6px;
   height: auto; }
+
+.courses-table.all-courses .courses-table__row.courses-table__row_head .courses-table__cell {
+  cursor: auto; }
 
 .courses-table.all-courses .nowrap {
   white-space: nowrap; }
@@ -730,6 +734,10 @@ input {
     .prices-table__block-price__linethrough {
       text-decoration: line-through;
       font-weight: 300; }
+
+.courses-table.all-courses .courses-table__row:hover .courses-table__cell {
+  background: #0a27a2;
+  color: #fff; }
 
 @media (max-width: 550px) {
   .courses-table.all-courses {
