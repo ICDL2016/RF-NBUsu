@@ -24,12 +24,35 @@ input:focus, textarea:focus
     outline-width: 0 !important
     outline-color: transparent !important
 
-
+.header
+    &-hat
+        font-size: 30px
+        color: $text
+        transition: color .3s
+        i
+            &:hover
+                color: $headers
 
 .logo
     margin: 10px auto 30px
     text-align: center
     color: $text
+    &-flex
+        margin: 0
+        position: fixed
+        width: 100%
+        top: 0
+        left: 0
+        background: #fff
+        padding: 0 20px
+    &-flex, &-left
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-left
+        margin-left: -40px
+    &-text
+        margin-left: -30px
     &-title
         padding: 0 5px
         font-size: 21px
@@ -273,7 +296,7 @@ input
         display: inline-block
         font-size: 20px
         background: #999999
-        color: #fff
+        color: #fff!important
         padding: 7px 3px 5px
         width: 30px
         -webkit-transition: 0.3s
@@ -313,6 +336,7 @@ input
         width: 700px
 
 @media screen and (max-width: 767px)
+
     .container
         width: 500px
 
@@ -329,6 +353,16 @@ input
 
 
 @media screen and (max-width: 575px)
+
+    .logo
+        &-text
+            margin-left: -40px
+            &__title
+                font-size: 16px
+                &-second
+                    font-size: 9.5px
+                    letter-spacing: .4px
+
     .container
         padding-left: 15px
         padding-right: 15px
