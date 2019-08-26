@@ -1072,6 +1072,8 @@ input {
 .start-bottom {
   margin-bottom: 20px;
   max-width: 275px; }
+  .start-bottom span {
+    color: #fff; }
 
 a:visited {
   color: inherit; }
