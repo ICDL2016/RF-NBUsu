@@ -123,7 +123,10 @@ input {
       border: 30px solid transparent;
       border-left: 40px solid #0a27a2;
       pointer-events: all;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all 0.3s; }
+    .form-video:hover::after, .start-video:hover::after {
+      border-left: 40px solid #0d33d2; }
   .form-block, .start-block {
     margin: 0 auto 20px;
     width: 350px;

@@ -116,6 +116,10 @@ input
             border-left: 40px solid $headers
             pointer-events: all
             cursor: pointer
+            transition: all .3s
+        &:hover
+            &::after
+                border-left: 40px solid lighten($headers, 10)
 
     &-block
         margin: 0 auto 20px
