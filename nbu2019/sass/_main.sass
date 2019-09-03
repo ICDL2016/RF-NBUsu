@@ -95,31 +95,30 @@ input
         align-items: center
         width: 100%
         padding: 10px
-    &-video
+    &-video__wrapper
         background: url('../img/cook.jpg') center no-repeat
         -webkit-background-size: cover
         background-size: cover
         height: 200px
         position: relative
         pointer-events: none
-        &::after
-            content: ''
-            position: absolute
-            top: 50%
-            left: 45%
-            -webkit-transform: translateY(-50%)
-            -moz-transform: translateY(-50%)
-            -ms-transform: translateY(-50%)
-            -o-transform: translateY(-50%)
-            transform: translateY(-50%)
-            border: 30px solid transparent
-            border-left: 40px solid $headers
-            pointer-events: all
-            cursor: pointer
-            transition: all .3s
+    &-video
+        content: ''
+        position: absolute
+        top: 50%
+        left: 45%
+        -webkit-transform: translateY(-50%)
+        -moz-transform: translateY(-50%)
+        -ms-transform: translateY(-50%)
+        -o-transform: translateY(-50%)
+        transform: translateY(-50%)
+        border: 30px solid transparent
+        border-left: 40px solid $headers
+        pointer-events: all
+        cursor: pointer
+        transition: all .3s
         &:hover
-            &::after
-                border-left: 40px solid lighten($headers, 10)
+            border-left: 40px solid lighten($headers, 10)
 
     &-block
         margin: 0 auto 20px
@@ -376,9 +375,6 @@ input
     .form
         &-block
             width: 300px
-        &-video
-            height: 168px!important
-            width: 100%!important
         &-input
             width: 280px
         &-title

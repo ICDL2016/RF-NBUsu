@@ -3,7 +3,9 @@
     <div class="form-title">Полный курс кулинарного дела</div>
     <div class="form-title form-title__second">КУЛИНАР - ЭКСПЕРТ</div>
     <div class="form-descr">Повар 6-го разряда</div>
-    <div class="form-video form-video1" onclick="play1(event)"></div>
+    <div class="form-video__wrapper">
+        <div class="form-video form-video1" onclick="play1(event)"></div>
+    </div>
     <div id="divPlayer1"></div>
 
     <form action="#" class="form">

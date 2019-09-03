@@ -104,12 +104,11 @@
 
     &-map
         &__photos
-            display: flex
+            text-align: center
             margin: 20px auto
-            width: 1200px
-            justify-content: space-between
             img
-                width: 290px
+                width: 300px
+                display: inline-block
 
 .contacts-form input::-webkit-input-placeholder
     color: rgba(#808080, .5)
@@ -136,10 +135,6 @@
             width: 100%
             &__photos
                 width: 575px
-                flex-wrap: wrap
-                img
-                    width: 280px
-                    margin-bottom: 10px
 
 @media screen and (max-width: 767px)
     .contacts
@@ -147,11 +142,10 @@
             &__workers
                 width: 100%
                 justify-content: center
-                flex-wrap: wrap
+                align-items: center
+                flex-direction: column
                 &-block
                     margin-bottom: 10px
-                    width: 251px
-                    height: 250px
 
 
 @media screen and (max-width: 575px)

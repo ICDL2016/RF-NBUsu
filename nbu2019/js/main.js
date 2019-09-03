@@ -19,12 +19,12 @@ function onYouTubeIframeAPIReady() {
 
 }
 function play1(event) {
-    event.target.style.display = 'none';
+    event.target.parentElement.style.display = 'none';
     $('#divPlayer1').show();
     player1.playVideo();
 }
 function play2(event) {
-    event.target.style.display = 'none';
+    event.target.parentElement.style.display = 'none';
     $('#divPlayer2').show();
     player2.playVideo()
 }

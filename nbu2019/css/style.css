@@ -103,29 +103,29 @@ input {
     align-items: center;
     width: 100%;
     padding: 10px; }
-  .form-video, .start-video {
+  .form-video__wrapper, .start-video__wrapper {
     background: url("../img/cook.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     height: 200px;
     position: relative;
     pointer-events: none; }
-    .form-video::after, .start-video::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 45%;
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      transform: translateY(-50%);
-      border: 30px solid transparent;
-      border-left: 40px solid #0a27a2;
-      pointer-events: all;
-      cursor: pointer;
-      transition: all 0.3s; }
-    .form-video:hover::after, .start-video:hover::after {
+  .form-video, .start-video {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 30px solid transparent;
+    border-left: 40px solid #0a27a2;
+    pointer-events: all;
+    cursor: pointer;
+    transition: all 0.3s; }
+    .form-video:hover, .start-video:hover {
       border-left: 40px solid #0d33d2; }
   .form-block, .start-block {
     margin: 0 auto 20px;
@@ -359,9 +359,6 @@ input {
 
   .form-block {
     width: 300px; }
-  .form-video {
-    height: 168px !important;
-    width: 100% !important; }
   .form-input {
     width: 280px; }
   .form-title {
@@ -637,12 +634,11 @@ input {
   font-weight: 700;
   color: #0a27a2; }
 .contacts-map__photos {
-  display: flex;
-  margin: 20px auto;
-  width: 1200px;
-  justify-content: space-between; }
+  text-align: center;
+  margin: 20px auto; }
   .contacts-map__photos img {
-    width: 290px; }
+    width: 300px;
+    display: inline-block; }
 
 .contacts-form input::-webkit-input-placeholder {
   color: rgba(128, 128, 128, 0.5);
@@ -666,20 +662,15 @@ input {
   .contacts-map {
     width: 100%; }
     .contacts-map__photos {
-      width: 575px;
-      flex-wrap: wrap; }
-      .contacts-map__photos img {
-        width: 280px;
-        margin-bottom: 10px; } }
+      width: 575px; } }
 @media screen and (max-width: 767px) {
   .contacts-consult__workers {
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap; }
+    align-items: center;
+    flex-direction: column; }
     .contacts-consult__workers-block {
-      margin-bottom: 10px;
-      width: 251px;
-      height: 250px; } }
+      margin-bottom: 10px; } }
 @media screen and (max-width: 575px) {
   .contacts-form {
     width: 300px; }

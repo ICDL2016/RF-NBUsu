@@ -55,10 +55,10 @@
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abcfcaa2b2f06427e2c7353c6891ff14179901de8d39049ce0eaeb1eade694be2&amp;width=100%25&amp;height=530&amp;lang=ru_RU&amp;scroll=false"></script>
 
     <div class="contacts-map__photos">
-        <img src="img/contacts/1.jpg" alt="photo">
-        <img src="img/contacts/2.jpg" alt="photo">
-        <img src="img/contacts/3.jpg" alt="photo">
-        <img src="img/contacts/4.jpg" alt="photo">
+        <a href="img/contacts/1.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/1.jpg" alt="photo"></a>
+        <a href="img/contacts/2.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/2.jpg" alt="photo"></a>
+        <a href="img/contacts/3.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/3.jpg" alt="photo"></a>
+        <a href="img/contacts/4.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/4.jpg" alt="photo"></a>
     </div>
 </div>
 
