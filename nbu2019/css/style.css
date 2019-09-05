@@ -660,9 +660,7 @@ input {
 
 @media screen and (max-width: 1199px) {
   .contacts-map {
-    width: 100%; }
-    .contacts-map__photos {
-      width: 575px; } }
+    width: 100%; } }
 @media screen and (max-width: 767px) {
   .contacts-consult__workers {
     width: 100%;
