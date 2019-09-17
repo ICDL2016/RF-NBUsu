@@ -131,20 +131,27 @@
 
 @media screen and (max-width: 1199px)
     .contacts
+        width: 620px
         &-map
             width: 100%
 
 @media screen and (max-width: 767px)
     .contacts
+        width: 100%
+        &-consult
+            &__workers
+                &-block
+                    margin-bottom: 10px
+
+@media screen and (max-width: 620px)
+    .contacts
+        width: 100%
         &-consult
             &__workers
                 width: 100%
                 justify-content: center
                 align-items: center
                 flex-direction: column
-                &-block
-                    margin-bottom: 10px
-
 
 @media screen and (max-width: 575px)
     .contacts

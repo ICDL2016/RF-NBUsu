@@ -659,16 +659,23 @@ input {
   font-family: "ArialMT", sans-serif; }
 
 @media screen and (max-width: 1199px) {
-  .contacts-map {
-    width: 100%; } }
+  .contacts {
+    width: 620px; }
+    .contacts-map {
+      width: 100%; } }
 @media screen and (max-width: 767px) {
-  .contacts-consult__workers {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
+  .contacts {
+    width: 100%; }
     .contacts-consult__workers-block {
       margin-bottom: 10px; } }
+@media screen and (max-width: 620px) {
+  .contacts {
+    width: 100%; }
+    .contacts-consult__workers {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; } }
 @media screen and (max-width: 575px) {
   .contacts-form {
     width: 300px; }
